@@ -1,10 +1,10 @@
 /* eslint-disable class-methods-use-this */
 /* eslint-disable prefer-const */
 import { AxiosError, AxiosInstance, AxiosResponse } from 'axios';
-import { HttpPostClient } from '../../data/protocols/http/http-post-client';
-import { ParamsPost } from '../../data/protocols/http/types/custom';
+import { HttpPostClient } from '../http-post-client';
+import { ParamsPost } from '../types/custom';
 
-export class AxiosPostRequest implements HttpPostClient {
+export class PostClient implements HttpPostClient {
   client: AxiosInstance;
 
   constructor(client: AxiosInstance) {

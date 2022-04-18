@@ -1,10 +1,10 @@
 /* eslint-disable class-methods-use-this */
 /* eslint-disable prefer-const */
 import { AxiosError, AxiosInstance, AxiosResponse } from 'axios';
-import { HttpGetClient } from '../../data/protocols/http/http-get-client';
-import { ParamsGet } from '../../data/protocols/http/types/custom';
+import { HttpGetClient } from '../http-get-client';
+import { ParamsGet } from '../types/custom';
 
-export class AxiosPostRequest implements HttpGetClient {
+export class GetClient implements HttpGetClient {
   client: AxiosInstance;
 
   constructor(client: AxiosInstance) {
