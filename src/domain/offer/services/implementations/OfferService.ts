@@ -1,19 +1,22 @@
-import { HttpGetClient } from '../../../../data/protocols/http/http-get-client';
-import { HttpPostClient } from '../../../../data/protocols/http/http-post-client';
-import { IOfferService } from '../IOfferService';
+import { AxiosInstance } from 'axios';
+import { QueryClient } from 'react-query';
 
-export default class OfferService implements IOfferService {
+import { Offers } from '../../models/offer';
+
+import { OfferServiceSkeleton } from '../OfferServiceSkeleton';
+
+export default class OfferService implements OfferServiceSkeleton {
   // eslint-disable-next-line no-useless-constructor
   constructor(
-    private getClient: HttpGetClient,
-    private postClient: HttpPostClient,
+    private httpClient: AxiosInstance,
+    private reactQueryClient: QueryClient,
   ) {
-    this.getClient = getClient;
-    this.postClient = postClient;
+    this.httpClient = httpClient;
+    this.reactQueryClient = reactQueryClient;
   }
 
-  async getOffers(): Promise<any> {
-    const offersFound = await this.getClient.get({ url: '/offers' });
-    return offersFound;
+  async getOffers(): Promise<Offers> {
+    const { data } = await this.httpClient.get<Offers>('/');
+    return data;
   }
 }

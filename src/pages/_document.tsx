@@ -49,7 +49,7 @@ export default class MyDocument extends Document {
           />
           <link
             rel="shortcut icon"
-            href="https://rocketseat.com.br/favicon.ico"
+            href="/images/favicon.png"
             type="image/x-icon"
           />
         </Head>
