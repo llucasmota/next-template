@@ -6,6 +6,14 @@ export type ParamsPost = {
   };
 };
 
+export type ParamsPut = {
+  url: string;
+  body?: any; // pensar em usar tipos que podem ser usados no body
+  headers?: {
+    [key: string]: string;
+  };
+};
+
 export type ParamsGet = {
   url: string;
   headers?: {
