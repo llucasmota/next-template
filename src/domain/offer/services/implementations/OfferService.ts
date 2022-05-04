@@ -20,7 +20,7 @@ export default class OfferService implements OfferServiceSkeleton {
       const { data: offers } = await this.httpClient.get<Offers>('/');
       return offers;
     } catch (err) {
-      throw new Error('Mensagem de error');
+      throw new Error('Mensagem de errorr');
     }
   }
 }
