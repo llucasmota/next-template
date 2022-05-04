@@ -39,3 +39,32 @@
 ## Documentação sobre commits:
 
 https://www.conventionalcommits.org/en/v1.0.0/
+
+
+
+## Adicionar regras do eslint
+  - "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-import-helpers": "^1.2.1",
+
+    https://github.com/GustavoDevOm/gom-next-app/blob/main/.eslintrc.json
+
+
+    {
+        "newlinesBetween": "always",
+        "groups": [
+          "/^react/",
+          "module",
+          "/^@/",
+          ["parent", "sibling", "index"]
+        ],
+        "alphabetize": { "order": "asc", "ignoreCase": true }
+      }
+    ],
+    "no-undef": "off",
+    "prettier/prettier": "error",
+    "react/jsx-key": "of
+
+## Paths:
+ mudar de @ para @/
+
+ ##

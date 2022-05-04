@@ -1,8 +1,8 @@
-import { AxiosInstance } from 'axios';
 import { QueryClient } from 'react-query';
 
-import { Offers } from '../../models/offer';
+import { AxiosInstance } from 'axios';
 
+import { Offers } from '../../models/offer';
 import { OfferServiceSkeleton } from '../OfferServiceSkeleton';
 
 export default class OfferService implements OfferServiceSkeleton {
