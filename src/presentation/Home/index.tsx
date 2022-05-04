@@ -2,10 +2,10 @@
 import { Container } from '@develop-fapp/ui-kit-fapp';
 import React from 'react';
 import HomePageHeader from './components/header';
-import { IOfferService } from '../../domain/offer/services/IOfferService';
+import { OfferServiceSkeleton } from '../../domain/offer/services/OfferServiceSkeleton';
 
 interface HomePageProps {
-  offerService: IOfferService;
+  offerService: OfferServiceSkeleton;
   title: string;
 }
 
