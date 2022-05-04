@@ -34,3 +34,8 @@
 
 ### Pages:
 - Pasta nativa next, responsável por manter as rotas da aplicação e implementações de server-side
+
+
+## Documentação sobre commits:
+
+https://www.conventionalcommits.org/en/v1.0.0/
