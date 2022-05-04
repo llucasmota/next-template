@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { Container } from '@develop-fapp/ui-kit-fapp';
-import { OfferServiceSkeleton } from '@domain/offer/services/OfferServiceSkeleton';
+import { OfferServiceSkeleton } from '@/domain/offer/services/OfferServiceSkeleton';
 import React from 'react';
 import HomePageHeader from './components/header';
 

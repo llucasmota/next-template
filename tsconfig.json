@@ -3,28 +3,28 @@
     "target": "es5",
     "baseUrl": ".",
     "paths": {
-      "@domain/*": [
+      "@/domain/*": [
         "./src/domain/*"
       ],
-      "@infra/*": [
+      "@/infra/*": [
         "./src/infra/*"
       ],
       "@main/*": [
         "./src/main/*"
       ],
-      "@presentation/*": [
+      "@/presentation/*": [
         "./src/presentation/*"
       ],
-      "@pages/*": [
+      "@/pages/*": [
         "./src/pages/*"
       ],
-      "@shared/*": [
+      "@/shared/*": [
         "./src/shared/*"
       ],
-      "@styles/*": [
+      "@/styles/*": [
         "./src/styles/*"
       ],
-      "@assets/*": [
+      "@/assets/*": [
         "./src/assets/*"
       ]
     },
