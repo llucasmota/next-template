@@ -1,6 +1,33 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "baseUrl": ".",
+    "paths": {
+      "@domain/*": [
+        "./src/domain/*"
+      ],
+      "@infra/*": [
+        "./src/infra/*"
+      ],
+      "@main/*": [
+        "./src/main/*"
+      ],
+      "@presentation/*": [
+        "./src/presentation/*"
+      ],
+      "@pages/*": [
+        "./src/pages/*"
+      ],
+      "@shared/*": [
+        "./src/shared/*"
+      ],
+      "@styles/*": [
+        "./src/styles/*"
+      ],
+      "@assets/*": [
+        "./src/assets/*"
+      ]
+    },
     "lib": [
       "dom",
       "dom.iterable",

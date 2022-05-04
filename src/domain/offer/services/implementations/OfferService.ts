@@ -15,8 +15,12 @@ export default class OfferService implements OfferServiceSkeleton {
     this.reactQueryClient = reactQueryClient;
   }
 
-  async getOffers(): Promise<Offers> {
-    const { data } = await this.httpClient.get<Offers>('/');
-    return data;
+  async getOffers(): Promise<Offers | Error> {
+    try {
+      const { data: offers } = await this.httpClient.get<Offers>('/');
+      return offers;
+    } catch (err) {
+      throw new Error('Mensagem de error');
+    }
   }
 }

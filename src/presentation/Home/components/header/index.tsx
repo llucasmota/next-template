@@ -2,7 +2,7 @@ import { Container, Input } from '@develop-fapp/ui-kit-fapp';
 import { SearchNormal1 } from 'iconsax-react';
 import Image from 'next/image';
 import React from 'react';
-import logo from '../../../../assets/logo.svg';
+import logo from '@assets/logo.svg';
 import { Header } from './styles';
 
 const HomePageHeader = (): JSX.Element => {
