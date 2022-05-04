@@ -1,6 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 import type { AppProps } from 'next/app';
 import { ThemeProvider } from 'styled-components';
+
 import GlobalStyle from '../styles/global';
 import theme from '../styles/theme';
 

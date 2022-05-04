@@ -1,7 +1,10 @@
-import { Container, Input } from '@develop-fapp/ui-kit-fapp';
+import React from 'react';
+
 import { SearchNormal1 } from 'iconsax-react';
 import Image from 'next/image';
-import React from 'react';
+
+import { Container, Input } from '@develop-fapp/ui-kit-fapp';
+
 import logo from '../../../../assets/logo.svg';
 import { Header } from './styles';
 
