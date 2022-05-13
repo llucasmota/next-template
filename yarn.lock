@@ -552,10 +552,10 @@
   dependencies:
     "@cspotcode/source-map-consumer" "0.8.0"
 
-"@develop-fapp/ui-kit-fapp@^0.1.44":
-  version "0.1.44"
-  resolved "https://registry.yarnpkg.com/@develop-fapp/ui-kit-fapp/-/ui-kit-fapp-0.1.44.tgz#3447529af5d3cd51a4505c6e1f8f9dd6136b8ba6"
-  integrity sha512-BYTWSYMGVJFqN+73HPza4qAbcPIOW0ZVH6s/8sj0gtrwyfClxPW2z9xOA6H94rr84P6uGzWJea46AQ3D3gYDng==
+"@develop-fapp/ui-kit-fapp@^0.1.51":
+  version "0.1.51"
+  resolved "https://registry.yarnpkg.com/@develop-fapp/ui-kit-fapp/-/ui-kit-fapp-0.1.51.tgz#b0f3509452840d7d7a5dfc4aa6276388b8c95e8c"
+  integrity sha512-hViVTfjDvIXo4DDjZ4iIoUVcWO0EYakqYykgQVqaZdc9+6EmB3/N0Sh+cmUocwG78dqnARYoPLu+ek9z22vnRw==
   dependencies:
     eslint-config-prettier "^8.3.0"
     eslint-plugin-prettier "^4.0.0"

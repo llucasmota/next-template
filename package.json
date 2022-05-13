@@ -6,7 +6,7 @@
     "pre-commit": "echo 'test'"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -14,7 +14,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@develop-fapp/ui-kit-fapp": "^0.1.44",
+    "@develop-fapp/ui-kit-fapp": "^0.1.51",
     "@next/eslint-plugin-next": "^12.1.0",
     "axios": "^0.26.1",
     "babel-plugin-inline-react-svg": "^2.0.1",
