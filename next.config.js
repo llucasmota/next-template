@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const LiveReloadPlugin = require('webpack-livereload-plugin')
 const ESLintPlugin = require('eslint-webpack-plugin')
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+})
+
+
 
 const nextConfig = {
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
@@ -20,4 +25,4 @@ const nextConfig = {
   swcMinify: true,
 }
 
-module.exports = nextConfig
+module.exports = withBundleAnalyzer(nextConfig)

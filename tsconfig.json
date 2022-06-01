@@ -22,7 +22,7 @@
         "./src/shared/*"
       ],
       "@/styles/*": [
-        "./src/styles/*"
+        "src/shared/styles/*"
       ],
       "@/assets/*": [
         "./src/assets/*"

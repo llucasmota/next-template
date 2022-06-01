@@ -7,6 +7,12 @@ export default createGlobalStyle`
   box-sizing: border-box;
 }
 
+html {
+  scroll-snap-type: both mandatory;
+}
+
+
+
 body {
   background: ${props => props.theme.colors.background};
   color: ${props => props.theme.colors.text};

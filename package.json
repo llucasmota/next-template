@@ -11,10 +11,12 @@
     "start": "next start",
     "lint": "next lint",
     "pre-commit": "lint-staged",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
-    "@develop-fapp/ui-kit-fapp": "^0.1.51",
+    "@develop-fapp/ui-kit-fapp": "^0.1.59",
+    "@next/bundle-analyzer": "^12.1.6",
     "@next/eslint-plugin-next": "^12.1.0",
     "axios": "^0.26.1",
     "babel-plugin-inline-react-svg": "^2.0.1",
