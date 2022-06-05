@@ -6,11 +6,11 @@ import Image from 'next/image';
 import { Container, Input } from '@develop-fapp/ui-kit-fapp';
 
 import logo from '../../../../assets/logo.svg';
-import { Header } from './styles';
+import { HeaderComp } from './styles';
 
-const HomePageHeader = (): JSX.Element => {
+export const HomePageHeader = (): JSX.Element => {
   return (
-    <Header>
+    <HeaderComp data-testid="header-id">
       <Container
         container="lg"
         flexDirection="column"
@@ -33,8 +33,6 @@ const HomePageHeader = (): JSX.Element => {
           />
         </Container>
       </Container>
-    </Header>
+    </HeaderComp>
   );
 };
-
-export default HomePageHeader;
