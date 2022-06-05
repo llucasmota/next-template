@@ -10,7 +10,7 @@ import { HeaderComp } from './styles';
 
 export const HomePageHeader = (): JSX.Element => {
   return (
-    <HeaderComp>
+    <HeaderComp data-testid="header-id">
       <Container
         container="lg"
         flexDirection="column"
