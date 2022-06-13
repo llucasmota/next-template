@@ -15,7 +15,7 @@
     "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
-    "@develop-fapp/ui-kit-fapp": "^0.1.59",
+    "@develop-fapp/ui-kit-fapp": "^0.1.64",
     "@next/bundle-analyzer": "^12.1.6",
     "@next/eslint-plugin-next": "^12.1.0",
     "axios": "^0.26.1",
@@ -57,6 +57,7 @@
     "jest": "^28.1.0",
     "lint-staged": "^12.4.1",
     "prettier": "^2.5.1",
-    "typescript": "^4.7.3"
+    "ts-jest": "^28.0.4",
+    "typescript": "^4.7.0"
   }
 }

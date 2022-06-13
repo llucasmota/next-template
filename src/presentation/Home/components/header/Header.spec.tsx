@@ -1,11 +1,19 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
+import { ThemeProvider } from 'styled-components';
+
+import theme from '@/shared/styles/theme';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { screen, render } from '@testing-library/react';
 
 import { HomePageHeader } from '.';
 
 describe('Header tests', () => {
   it('header', () => {
-    render(<HomePageHeader />);
+    render(
+      <ThemeProvider theme={theme}>
+        <HomePageHeader />
+      </ThemeProvider>,
+    );
 
     expect(screen.getByTestId('header-id')).toBeInTheDocument();
   });

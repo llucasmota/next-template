@@ -2,6 +2,7 @@ import React from 'react';
 
 import { SearchNormal1 } from 'iconsax-react';
 import Image from 'next/image';
+import { useTheme } from 'styled-components';
 
 import { Container, Input } from '@develop-fapp/ui-kit-fapp';
 
@@ -9,13 +10,14 @@ import logo from '../../../../assets/logo.svg';
 import { HeaderComp } from './styles';
 
 export const HomePageHeader = (): JSX.Element => {
+  const { colors } = useTheme();
   return (
     <HeaderComp data-testid="header-id">
       <Container
         container="lg"
         flexDirection="column"
         justifyContent="center"
-        backgroundColor="#2d4054"
+        backgroundColor={colors.primary}
         style={{ height: '100px' }}
       >
         <Container
