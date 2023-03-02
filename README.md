@@ -11,7 +11,7 @@
 
 
 ### Domain:
-- Os contextos e hooks react são implementados dentro de suas respecitivas parastas
+- Os contextos e hooks react são implementados dentro de suas respecitivas padstas
 - models: responsável por manter uma interface que represente o domínio
 - services: responsavel por manter a interface de um serviço(arquivos terminados com "Skeleton");
 - services/implementations: Implementação a interface Skeleton
