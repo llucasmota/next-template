@@ -1,18 +1,17 @@
-import Head from 'next/head';
 import React from 'react';
-import logo from '../assets/rocketseat.svg';
+
+import Head from 'next/head';
+
+import HomePageFactory from '../main/factories/Home';
 
 const Home: React.FC = () => {
   return (
-    <div>
+    <>
       <Head>
-        <title>Home Page</title>
+        <title>Home</title>
       </Head>
-      <main>
-        <img src={logo} alt="" />
-        <h1>Olá cara</h1>
-      </main>
-    </div>
+      <HomePageFactory />
+    </>
   );
 };
 

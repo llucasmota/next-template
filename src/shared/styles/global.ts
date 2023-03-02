@@ -7,9 +7,15 @@ export default createGlobalStyle`
   box-sizing: border-box;
 }
 
+html {
+  scroll-snap-type: both mandatory;
+}
+
+
+
 body {
   background: ${props => props.theme.colors.background};
   color: ${props => props.theme.colors.text};
-  font: 400 16px Roboto, sans-serif;
+  font: 400 16px 'Montserrat', sans-serif;
 }
 `;

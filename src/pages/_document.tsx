@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Document, {
   Head,
   Html,
@@ -24,12 +26,10 @@ export default class MyDocument extends Document {
       const initialProps = await Document.getInitialProps(ctx);
       return {
         ...initialProps,
-        styles: (
-          <>
-            {initialProps.styles}
-            {sheet.getStyleElement()}
-          </>
-        ),
+        styles: [
+          ...React.Children.toArray(initialProps.styles),
+          sheet.getStyleElement(),
+        ],
       };
     } finally {
       sheet.seal();
@@ -41,13 +41,15 @@ export default class MyDocument extends Document {
       <Html lang="pt">
         <Head>
           <meta content="text/html;charset=UTF-8" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap"
             rel="stylesheet"
           />
           <link
             rel="shortcut icon"
-            href="https://rocketseat.com.br/favicon.ico"
+            href="/images/favicon.png"
             type="image/x-icon"
           />
         </Head>
