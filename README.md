@@ -9,9 +9,8 @@
 
 ```yarn dev```
 
-
 ### Domain:
-- Os contextos e hooks react são implementados dentro de suas respecitivas padstas
+- Os contextos e hooks react são implementados dentro de suas respecitivas pastas
 - models: responsável por manter uma interface que represente o domínio
 - services: responsavel por manter a interface de um serviço(arquivos terminados com "Skeleton");
 - services/implementations: Implementação a interface Skeleton
@@ -23,7 +22,7 @@
 
 ### main/factories:
 
-- Responsável um componente que represente uma página da aplicação. Em factories instanciamos e repassamos implementações necessárias para uma página functionar;
+- Responsável por um componente que represente uma página da aplicação. Em factories instanciamos e repassamos injetamos as dependências necessárias para uma página funcionar;
 
 ### Shared:
 - Responsável por manter hooks, contextos, componentes e demais estruturas compartilhadas entre vários domínios
